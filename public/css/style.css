@@ -1,0 +1,190 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* BODY */
+
+body { /*body = todo el documento*/
+
+    background-image: url(../fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background: url(https://cdn.wallpapersafari.com/28/52/q6mQEi.jpg);*/
+    
+}
+
+/* DIV */
+
+div#general{
+    margin: auto;
+    margin-top:40px;
+    width: 1170px;
+    height: 650px;
+    background-color:rgb(35, 13, 37);
+
+    border-top: 2px solid rgb(77, 24, 70);
+    border-right: 2px solid rgb(77, 24, 70);
+    border-bottom: 2px solid rgb(77, 24, 70);
+    border-left: 2px solid rgb(77, 24, 70);
+}
+
+div#izquierda{
+
+    float: left;
+    width: 220px;
+    height: 632px;
+    text-align: center;
+    /*background-color:rgb(17, 19, 19);*/
+
+}
+
+div#subtitulo{
+
+    float: left;
+    width: 950px;
+    height: 50px;
+    /*background-color: rgb(17, 19, 19);*/
+    /*border-bottom: 3px solid lightseagreen;*/
+}
+
+div#emails{
+
+    text-align: center;
+    /*width: 1170px;*/
+    width: 1170px;
+    height: 240px;
+    /*background-color: rgb(73, 22, 121);*/
+    /*border-bottom: 3px solid lightseagreen;*/
+
+}
+
+div#emails2{
+    
+    margin-left: 650px;
+    width: 400px;
+    height: 100px;
+    position:fixed;
+    /*background-color: rgb(182, 154, 207);*/
+    /*border-bottom: 3px solid lightseagreen;*/
+
+}
+
+div#body{
+
+    margin-top: 15px;
+    width: 1170px;
+    height: 250px;
+    /*border-top: 3px solid lightseagreen;
+    border-bottom: 3px solid lightseagreen;*/
+
+}
+
+div#texto{
+
+    text-align: center;
+    width: 1170px;
+    height: 240px;
+    /*background-color: rgb(73, 22, 121);*/
+    /*border-bottom: 3px solid lightseagreen;*/
+
+}
+
+
+/* TABLE */
+
+table{
+    background-color: rgb(58, 20, 80);
+    text-align: center;
+    width: 948px;
+    border: 2px solid #000;
+}
+td{
+    padding: 3px;
+    color: #ffa1ef;
+}
+th{
+    padding: 2px;
+    color: rgba(238, 202, 255, 0.925);
+}
+tr:hover th{
+    background-color: #e79affce;
+    color: rgb(0, 0, 0);
+}
+
+tr:nth-child(even){
+    background-color: rgb(97, 32, 134);
+}
+
+
+/* H# */
+
+h1{
+    /*Posición*/
+    text-align: center;
+    /*Color*/
+    color:hotpink;
+    font-size: 40px;
+}
+
+h2{
+    /*Tamaño*/
+    font-size: 17px;
+    /*Posición*/
+    text-align: left;
+    margin-top: 0.2%;
+    margin-left: 37%;
+    /*Color*/
+    color:rgb(204, 106, 191);
+    /*color:lightseagreen;*/
+    /*margin: 20px 50px;*/
+    /*width: 25%;*/
+}
+
+h3{
+    /*Tamaño*/
+    font-size: 22px;
+    /*Posición*/
+    margin-top: 0.2%;
+    text-align: center;
+    /*Color*/
+    color:rgb(182, 11, 159);
+    /*color:lightseagreen;*/
+    /*margin: 20px 50px;*/
+    /*width: 25%;*/
+}
+
+h4{
+    /*Tamaño*/
+    font-size: 17px;
+    /*Posición*/
+    text-align: left;
+    margin-top: 0.2%;
+    margin-left: 8%;
+    /*Color*/
+    color:rgb(204, 106, 191);
+    /*color:lightseagreen;*/
+    /*margin: 20px 50px;*/
+    /*width: 25%;*/
+}
+
+h5{
+    /*Tamaño*/
+    font-size: 20px;
+    /*Posición*/
+    text-align: left;
+    /*Color*/
+    color:skyblue;
+    /*margin: 20px 50px;*/
+    /*width: 25%;*/
+}
+
+/* TEXT AREA*/
+
+textarea{
+
+    position:fixed;
+    /*background-color: rgb(182, 154, 207);*/
+    /*border-bottom: 3px solid lightseagreen;*/
+
+}

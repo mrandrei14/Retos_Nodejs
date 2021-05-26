@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" , href="logo.png" ,
+        type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pagina Principal</title>
+</head>
+
+<body>
+
+    <div id="general">
+
+        <br>
+        <div id="izquierda">
+
+            <!-- Agregar -->
+            <form action="/agregar" method="post" class="card-body">
+                <h3>Agregar Usuario</h3>
+                <br>
+                <div id="group">
+                    <input id="nombre" type="text" name="nombre" class="form-control" placeholder="Nombre">
+                </div>
+
+                <div id="group">
+                    <input type="text" name="apellido1" class="form-control" placeholder="Primer Apellido">
+                </div>
+
+                <div id="group">
+                    <input type="text" name="apellido2" class="form-control" placeholder="Segundo Apellido">
+                </div>
+
+                <div id="group">
+                    <input type="text" name="cedula" class="form-control" placeholder="Cedula">
+                </div>
+
+                <div id="group">
+                    <input type="text" name="correo" class="form-control" placeholder="Correo Electronico">
+                </div>
+
+                <input type="submit" class="btn btn-primary" value="Agregar">
+            </form>
+            <br><br>
+
+            <!-- Editar -->
+            <form action="/editar" method="post" class="card-body">
+                <h3>Editar Usuario</h3>
+                <br>
+                <div id="group">
+                    <input id="nombre" type="text" name="nombre" class="form-control" placeholder="Nombre">
+                </div>
+
+                <div id="group">
+                    <input type="text" name="apellido1" class="form-control" placeholder="Primer Apellido">
+                </div>
+
+                <div id="group">
+                    <input type="text" name="apellido2" class="form-control" placeholder="Segundo Apellido">
+                </div>
+
+                <div id="group">
+                    <input type="text" name="cedula" class="form-control" placeholder="Cedula">
+                </div>
+
+                <div id="group">
+                    <input type="text" name="correo" class="form-control" placeholder="Correo Electronico">
+                </div>
+
+                <input type="submit" class="btn btn-primary" value="Editar">
+            </form>
+            <br><br>
+
+            <!-- Eliminar -->
+            <form action="/eliminar" method="post" class="card-body">
+                <h3>Eliminar Usuario</h3>
+                <br>
+
+                <div id="group">
+                    <input type="text" name="cedula" class="form-control" placeholder="Cedula">
+                </div>
+
+                <input type="submit" class="btn btn-primary" value="Eliminar">
+            </form>
+
+            <br>
+            <br>
+            <img src="logo.png" width="93" height="80">
+                    
+
+        </div>
+
+        <div id="emails">
+            <form action="/recuperardatos" method="post" class="card-body">
+                <h3>Envio de Correos Electronicos</h3>
+                <br><br>
+
+                <div id="emails2">
+                    <h4>Redactar un correo:
+                        </p>
+                        <textarea type="textarea" name="cuerpo" rows="3" cols="34"
+                            placeholder="Redactar un correo"></textarea>
+                    </h4>
+                </div>
+
+                <div id="group">
+                    <h2>De:
+                        <input id="correo" type="text" name="correoPre" class="form-control" placeholder="De" size="27"
+                            readonly value=<%=correoPre%> >
+                    </h2>
+                </div>
+
+                <div id="group">
+                    <h2>Para:
+                        <input id="correo" type="text" name="correo" class="form-control" placeholder="Para" size="25">
+                    </h2>
+                </div>
+
+                <div id="group">
+                    <h2>Asunto:
+                        <input type="text" name="asunto" class="form-control" placeholder="Asunto" size="22">
+                    </h2>
+                </div>
+
+                <br>
+                <input type="submit" class="btn btn-primary">
+            </form>
+        </div>
+
+
+        <div id="subtitulo">
+            <h3>Tabla de Usuarios</h3>
+        </div>
+
+        <!-- SQL -->
+        <br>
+        <div id="body">
+            <table border="3">
+                <tr>
+                    <td>Nombre</td>
+                    <td>Primer Apellido</td>
+                    <td>Segundo Apellido</td>
+                    <td>Cedula</td>
+                    <td>Correo Electronico</td>
+                </tr>
+
+                <% for(var i=0; i < news.length; i++) { %>
+                    <tr>
+                        <th>
+                            <%= news[i].nombre %>
+                        </th>
+                        <th>
+                            <%= news[i].apellido1 %>
+                        </th>
+                        <th>
+                            <%= news[i].apellido2 %>
+                        </th>
+                        <th>
+                            <%= news[i].cedula %>
+                        </th>
+                        <th>
+                            <%= news[i].correo %>
+                        </th>
+                    </tr>
+                    <% } %>
+
+            </table>
+        </div>
+    </div>
+
+    <script>
+
+        //document.getElementById('correo').focus();
+
+    </script>
+
+</body>
+
+</html>
